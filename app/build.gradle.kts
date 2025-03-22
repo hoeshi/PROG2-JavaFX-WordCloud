@@ -8,6 +8,12 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     application
+    id("org.openjfx.javafxplugin") version "0.1.0"
+}
+
+javafx {
+    version = "21.0.6"
+    modules = listOf("javafx.controls", "javafx.fxml")
 }
 
 repositories {
